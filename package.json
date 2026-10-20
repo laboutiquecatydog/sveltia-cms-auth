@@ -1,0 +1,27 @@
+{
+  "name": "sveltia-cms-auth",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "pnpm run '/^check:.*/'",
+    "check:audit": "pnpm audit",
+    "check:cspell": "cspell --no-progress",
+    "check:prettier": "prettier --check .",
+    "check:eslint": "eslint ."
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "cspell": "^10.4.0",
+    "eslint": "^9.39.5",
+    "eslint-config-airbnb-extended": "^3.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsdoc": "^65.3.12",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
+    "wrangler": "4.151.1"
+  }
+}
